@@ -1,0 +1,23 @@
+import java.util.*;
+import java.math.*;
+public class binaryTodecimal {
+
+   
+    public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    System.out.println("Enter a binary number : ");
+    int num = scn.nextInt();
+    int i=1;
+    int result =0;
+    int rem =0;
+    while(num>0){
+        rem = num % 10;
+        result = result + rem*i;
+        i = i * 2;
+        num = num / 10;
+
+
+    }
+    System.out.println("Your equivalent value in decimal is "+result );
+   }
+}
